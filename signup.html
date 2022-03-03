@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup form</title>
+       <link rel="stylesheet" type="text/css" href="signupc.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>SIGNUP </h1>
+            <form id="signup-form"  onsubmit="return call2()" method="POST" action="signup_form_data.php">
+                
+                <div class="form-input">
+                    <input type="text"  class="input" name="Username" placeholder="Enter Username" id="Uname" >
+                </div>
+                <div class="form-input">
+                    <input type="text"  class="input" name="email" placeholder="Enter Email" id="email" >
+                </div>
+                <div class="form-input">
+                    <input type="password"  class="input" name="passwords" placeholder="Enter password" id="password" onkeyup="return validate()" maxlength="12" minlength="8">
+                </div>
+                <div class="form-input">
+                    <input type="password"  id="cpassword"class="input" name="cpasswords" placeholder="Enter confirm-password"  maxlength="12" minlength="8">
+                </div>
+                
+                <div id="errorbox"></div>
+                <input type ="submit" class="button" value="Signup" id="signup" onclick="validateSignup()">
+                <br><br>
+                <a href="login.html">Existing user, login !?</a> 
+            
+            <br>
+            <div class="validation">
+            <b>[password validation:</b>
+                <i id="upper">Atleast one uppercase</i>,
+                <i id="lower">Atleast one lowercase</i>,
+                <i id="special_char">Atleast one one special sympol</i>,
+                <i id="number">Atleast one number</i>,
+                <i id="length">Atleast 8 characters</i>.]
+            </div>
+        </form>
+        </div>
+        <script type="text/javascript" src="passwordvalidation.js"></script>
+        <script type="text/javascript" src="signupvalidation.js"></script>
+    </body>
+</html>

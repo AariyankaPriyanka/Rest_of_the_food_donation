@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 30%;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 68%;
+    float: right;
+}
+nav ul{
+    list-style: none;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: red;
+}
+
+
+
+.x-div
+{
+    position:static;
+    padding: 160px;
+    left: 500px;
+    top: 100px;
+    cursor: pointer;
+    font-size: 100px;
+    
+}
+x-sign
+{
+  color: rgb(240, 12, 118);
+  --color1:rgb(201, 133, 178);
+  --color2:rgb(239, 243, 6);
+  --color3:rgb(10, 216, 216);
+  --color4:rgb(240, 217, 9);
+  --color5:rgb(164, 164, 245);
+  font-family: Yellowtail;
+  --interval: 2s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1),
+                0 0 20px var(--color2),
+                0 0 40px var(--color3),
+                0 0 80px var(--color4),
+                0 0 100px var(--color5);
+                will-change: filter, color;
+                filter: saturate(60%);
+                animation: flicker steps(100) var(--interval) 1s infinite;
+}
+@keyframes flicker
+{
+    50%
+    {
+        color: white;
+        filter: saturate(300%) hue-rotate(150deg);
+    }
+}
+
+
+
+
+footer{
+    background: #3c023f;
+    color:rgb(252, 245, 245);
+    padding: 15px 20px;
+    text-align: center;
+    padding-top: 15px;
+    font-family: sans-serif;
+}
+

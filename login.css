@@ -1,0 +1,87 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(243, 181, 207, 0.71), rgba(248, 178, 231, 0.71)),  url("dbgimg.jpg");
+}
+.container{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px red, 0 0 40px red;
+    animation: animate 2s linear infinite;
+    color:rgb(0,0,139);
+}
+
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 20px rgb(240, 62, 160), 0 0 40px rgb(236, 53, 160);
+    }
+    25%{
+        box-shadow: 0 0 40px rgb(238, 29, 127), 0 0 80px rgb(212, 24, 96);
+    }
+    50%{
+        box-shadow: 0 0 20px rgb(255, 18, 176), 0 0 40px rgb(241, 21, 168);
+    }
+    75%{
+        box-shadow: 0 0 40px red, 0 0 80px red;
+    }
+    100%{
+        box-shadow: 0 0 20px red, 0 0 40px red;
+    }
+    
+}
+.container h1{
+    margin: 40px 0;
+    text-shadow: 0 0 20px aqua;
+}
+.form-input{
+    margin: 10px 0;
+}
+.input{
+    width: 350px;
+    height:45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size:20px;
+    text-align: center;
+    box-shadow: 0 0 30px tomato;
+}
+.button{
+    width: 150px;
+    padding: 10px;
+    font-size:20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    box-shadow:0 0 20px dodgerblue;
+    cursor: pointer;
+}
+
+.form_element1{
+    text-align:center;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ac248a;
+ }
+
+
+ a:hover{
+    color: red;
+ }
+
+ 
+

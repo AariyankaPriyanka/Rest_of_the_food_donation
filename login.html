@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+       <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>LOGIN </h1>
+            <form id="login-form"  onsubmit="return call1()" method="POST" action="login_form_data.php">
+                <div class="form-input">
+                    <input type="gmail" name="email" class="input" placeholder="Enter email" id="email" >
+                </div>
+                <div class="form-input">
+                    <input type="password" name="passwords" class="input" placeholder="Enter password" id= "upassword" >
+                </div>
+                <div id="errorBox"></div>
+                <input type ="submit" name="" class="button" value="Login">
+                <br><br>
+                <a href="signup.html">Register for new account ?</a> 
+                <br><br>
+                     
+                <div class="form_element1">
+                    <a href="#">Forgot password</a>
+                </div> 
+            </form>
+        </div>
+        <script type="text/javascript" src="loginvalidation.js"></script>
+        
+        <center>
+            <div>
+              <a href=Home.html style=" border-radius: 20px;
+              font-size: 40px; padding: 50px; padding-top: 140px; padding-right: 10px; padding-left: 10px;
+               padding-bottom: 15px; font-family: sans-serif;
+               position: absolute;top:80%;right: 500px;width: 400px;transform: translateY(-40%); color:rgb(248, 23, 154);">Home</a>
+             </div>
+          </center>
+          
+    </body>
+</html>
